@@ -71,12 +71,6 @@ I transformed the raw sheets above in Power Query and modeled them into the foll
 ### Relationships
 All fact tables connect to the shared dimensions (`dim_date`, `dim_geo`, `dim_customer`, `dim_product`, `dim_order_flags`) in a standard one-to-many star schema, avoiding snowflaking and keeping the model simple and performant.
 
-## 📊 Reports
-
-The `.pbix` includes report pages built on top of the model, including:
-- Sales summary by year/quarter/month (using the `dim_date` hierarchy)
-- KPI cards for total sales and total orders (via `_measures`)
-- Regional breakdown by customer
 
 ## 🛠️ Tools Used
 
@@ -94,7 +88,6 @@ The `.pbix` includes report pages built on top of the model, including:
 ## 📌 Notes
 
 - This is a portfolio project I built on synthetic data, designed to simulate common real-world data quality issues (split tables, inconsistent keys, wide/pivoted layouts, delimited multi-value fields, free text, legacy references) — and to demonstrate the dimensional modeling process end to end.
-- Feel free to fork this repo and practice your own dimensional modeling on the same raw dataset.
 
----
-*Feel free to adjust the sections above (screenshots, live report link, measure list, etc.) to match your final build before publishing.*
+## AUTHOR
+-Ritesh Astekar
