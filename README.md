@@ -9,7 +9,7 @@ This project is focused on the **data modeling work itself**: profiling messy in
 | File | Description |
 |---|---|
 | `dataset.xlsx` | Raw source data — the "before" state. Multiple sheets simulating exports from different systems (orders, CRM, campaigns, inventory, finance), with intentional messiness (mixed keys, duplicate customer records, legacy references, free-text fields, wide/pivoted tables, etc.) |
-| `project_datamodel.pbix` | The Power BI project — Power Query transformations, the modeled star schema, and report pages built on top of the clean model |
+| `project_datamodel.pbix` | The Power BI project — Power Query transformations, the modeled star schema |
 
 ## 🎯 Project Goal
 
